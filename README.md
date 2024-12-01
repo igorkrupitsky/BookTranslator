@@ -12,8 +12,11 @@ The app will also create a Ratio of the length of original text to the the trans
 
 The Report button will create an HTML document you can email to someone to review the final translations and ratings. 
 
+![](https://github.com/igorkrupitsky/BookTranslator/blob/main/Book_Translator-r-700.png?raw=true)
+
 Creating a Text document out of PDF can be vary time consuming. I am planning to create another project that would do so by using OpenAI Vision API.  For now the best way is to upload your PDF file to Google Drive.  Google will automatically OCR it for you.  Next use AutoHotkey  convert the PDF to text so that each paragraph is a line of text.  For example, by using this AutoHotkey code below you can highlight a  paragraph in PDF file and press Windows Key.  AutoHotkey will append the text to your Text file.
 
+```autohotkey
 #Persistent
 #SingleInstance Force
 ; Define the hotkey Ctrl + Shift + C
@@ -28,6 +31,7 @@ Creating a Text document out of PDF can be vary time consuming. I am planning to
     filePath := "C:\Audio\Test.txt"
     FileAppend, %selectedText%`r`n, %filePath%, UTF-8
 return
+```
 
 First you need to get the  AI API Key from Open AI, Anthropic or both.
 
