@@ -15,7 +15,7 @@ The app will also create a Ratio of the length of original text to the the trans
 
 The Report button will create an HTML document you can email to someone to review the final translations and ratings. 
 
-![](Book_Translator-r-700.png)
+![](img/Book_Translator-r-700.png)
 
 Creating a Text document out of PDF can be vary time consuming. I am planning to create another project that would do so by using OpenAI Vision API.  For now the best way is to upload your PDF file to Google Drive.  Google will automatically OCR it for you.  Next use AutoHotkey  convert the PDF to text so that each paragraph is a line of text.  For example, by using this AutoHotkey code below you can highlight a  paragraph in PDF file and press Windows Key.  AutoHotkey will append the text to your Text file.
 
